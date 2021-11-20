@@ -1,0 +1,587 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  font-family: Lato;
+  font-style: normal;
+}
+
+body {
+  /* background-color: #000; */
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  background-image: url("./Svgs/background.svg");
+  background-repeat: no-repeat;
+  background-size: 300% 80rem;
+  background-position: center 1.25%;
+}
+
+#navbar {
+  top: 0;
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-brand {
+  font-size: 40px;
+  text-decoration: none;
+  padding-left: 20px;
+}
+
+#navbar ul {
+  list-style-type: none;
+  overflow: hidden;
+  padding-right: 20px;
+}
+
+#navbar li {
+  display: inline-block;
+}
+
+.nav-item a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #012732;
+  display: block;
+  text-align: center;
+  padding: 13px 20px;
+}
+
+.nav-item:hover a {
+  text-decoration: none;
+  color: #059fc9;
+}
+
+a {
+  line-height: 1.4;
+  padding: 0.25em;
+}
+
+.current {
+  text-decoration: underline;
+  text-decoration-style: solid;
+  color: #767879 !important;
+}
+
+.header {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.header h1 {
+  font-style: normal;
+  font-size: 4rem;
+}
+
+.logo {
+  /* Rectangle 3 */
+  background: #ffffff;
+  box-shadow: 0px 6px 13px rgba(5, 159, 201, 0.25);
+  border-radius: 10px;
+  padding: 0.3rem;
+  margin: 0.7rem;
+  width: 2.5rem;
+  text-align: center;
+}
+
+.member {
+  border-radius: 10px;
+  max-width: 20em;
+
+  /* display: none; */
+}
+
+.member h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #012732;
+  font-weight: bold;
+}
+
+.member p {
+  margin: 0.5rem 0;
+  color: #767879;
+}
+
+.member span {
+  color: #012732;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.member .links a {
+  font-size: xx-large;
+  color: black;
+}
+
+.member p a {
+  text-decoration: none;
+  color: #767879;
+}
+
+/* .pic {
+  box-shadow: 5px 2px 15px 5px #00b8e6;
+} */
+
+.pic img {
+  height: 20rem;
+  width: 15rem;
+  width: 100%;
+  clip-path: polygon(0 0, 70% 0, 100% 30%, 100% 100%, 0 100%);
+  filter: grayscale(100%);
+}
+
+.pic img:hover {
+  filter: none;
+}
+
+.container,
+.c2019 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1em 2em;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "intro intro . . ."
+    "intro intro one . ."
+    "intro intro one two ."
+    "intro intro one two three"
+    ". . one two three"
+    "four . one two three"
+    "four five . two three"
+    "four five six . three"
+    "four five six seven ."
+    "four five six seven eight"
+    ". five six seven eight"
+    "nine . six seven eight"
+    "nine ten . seven eight"
+    "nine ten eleven . eight"
+    "nine ten eleven twelve ."
+    "nine ten eleven twelve ."
+    ". ten eleven twelve ."
+    ". . eleven twelve ."
+    ". . . twelve .";
+}
+
+.c2020 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1em 2em;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "intro intro . . ."
+    "intro intro one . ."
+    "intro intro one two ."
+    "intro intro one two three"
+    ". . one two three"
+    "four . one two three"
+    "four five . two three"
+    "four five six . three"
+    "four five six seven ."
+    "four five six seven eight"
+    ". five six seven eight"
+    "nine . six seven eight"
+    "nine ten . seven eight"
+    "nine ten eleven . eight"
+    "nine ten eleven twelve ."
+    "nine ten eleven twelve thirteen"
+    ". ten eleven twelve thirteen"
+    "fourteen . eleven twelve thirteen"
+    "fourteen fiveteen . twelve thirteen"
+    "fourteen fiveteen sixteen . thirteen"
+    "fourteen fiveteen sixteen seventeen ."
+    "fourteen fiveteen sixteen seventeen eighteen"
+    ". fiveteen sixteen seventeen eighteen"
+    "nineteen . sixteen seventeen eighteen"
+    "nineteen twenty . seventeen eighteen"
+    "nineteen twenty twenty1 . eighteen"
+    "nineteen twenty twenty1 twenty2 ."
+    "nineteen twenty twenty1 twenty2 twenty3"
+    ". twenty twenty1 twenty2 twenty3"
+    "twenty4 . twenty1 twenty2 twenty3"
+    "twenty4 twenty5 . twenty2 twenty3"
+    "twenty4 twenty5 twenty6 . twenty3"
+    "twenty4 twenty5 twenty6 . ."
+    "twenty4 twenty5 twenty6 . ."
+    ". twenty5 twenty6 . ."
+    ". . twenty6 . .";
+}
+
+.c2018 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1em 2em;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "intro intro . . ."
+    "intro intro one . ."
+    "intro intro one two ."
+    "intro intro one two ."
+    ". . one two ."
+    ". . one two ."
+    ". . . two ." !important;
+}
+
+.intro {
+  grid-area: intro;
+  width: -webkit-fill-available;
+}
+.intro h1 {
+  font-size: 40px;
+}
+.intro p {
+  font-size: 25px;
+  margin: 0 1em 0 0;
+}
+
+.one {
+  grid-area: one;
+}
+
+.two {
+  grid-area: two;
+}
+
+.three {
+  grid-area: three;
+}
+
+.four {
+  grid-area: four;
+}
+
+.five {
+  grid-area: five;
+}
+
+.six {
+  grid-area: six;
+}
+
+.seven {
+  grid-area: seven;
+}
+
+.eight {
+  grid-area: eight;
+}
+
+.thirteen {
+  grid-area: thirteen;
+}
+
+.twelve {
+  grid-area: twelve;
+}
+
+.eleven {
+  grid-area: eleven;
+}
+
+.ten {
+  grid-area: ten;
+}
+
+.nine {
+  grid-area: nine;
+}
+
+.fourteen {
+  grid-area: fourteen;
+}
+
+.fiveteen {
+  grid-area: fiveteen;
+}
+
+.sixteen {
+  grid-area: sixteen;
+}
+
+.seventeen {
+  grid-area: seventeen;
+}
+
+.eighteen {
+  grid-area: eighteen;
+}
+
+.nineteen {
+  grid-area: nineteen;
+}
+
+.twenty {
+  grid-area: twenty;
+}
+
+.twenty1 {
+  grid-area: twenty1;
+}
+
+.twenty2 {
+  grid-area: twenty2;
+}
+
+.twenty3 {
+  grid-area: twenty3;
+}
+
+.twenty4 {
+  grid-area: twenty4;
+}
+
+.twenty5 {
+  grid-area: twenty5;
+}
+
+.twenty6 {
+  grid-area: twenty6;
+}
+
+.twenty7 {
+  grid-area: twenty7;
+}
+
+.container {
+  height: 100%;
+  margin: 0;
+}
+
+/* For presentation only, no need to copy the code below */
+
+.container {
+  margin: 3em 5em;
+}
+
+.container div {
+  position: relative;
+}
+
+.member {
+  max-height: 30rem;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 1200px) {
+  .container {
+    display: grid;
+    justify-items: center;
+    margin: 1em;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 2.5em 2em;
+    grid-template-areas:
+      "intro intro"
+      "intro intro"
+      "one ."
+      "one two"
+      "one two"
+      "one two"
+      "three two"
+      "three four"
+      "three four"
+      "three four"
+      "five four"
+      "five six"
+      "five six"
+      "five six"
+      "seven six"
+      "seven eight"
+      "seven eight"
+      "seven eight"
+      "nine eight"
+      "nine ten"
+      "nine ten"
+      "nine ten"
+      "eleven ten"
+      "eleven twelve"
+      "eleven twelve"
+      "eleven twelve"
+      ". twelve";
+  }
+
+  .c2018 {
+    display: grid;
+    justify-items: center;
+    margin: 1em;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 2.5em 2em;
+    grid-template-areas:
+      "intro intro"
+      "intro intro"
+      "one ."
+      "one two"
+      "one two"
+      "one two"
+      ". two" !important;
+  }
+
+  .c2020 {
+    display: grid;
+    justify-items: center;
+    margin: 1em;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 2.5em 2em;
+    grid-template-areas:
+      "intro intro"
+      "intro intro"
+      "one ."
+      "one two"
+      "one two"
+      "one two"
+      "three two"
+      "three four"
+      "three four"
+      "three four"
+      "five four"
+      "five six"
+      "five six"
+      "five six"
+      "seven six"
+      "seven eight"
+      "seven eight"
+      "seven eight"
+      "nine eight"
+      "nine ten"
+      "nine ten"
+      "nine ten"
+      "eleven ten"
+      "eleven twelve"
+      "eleven twelve"
+      "eleven twelve"
+      "thirteen twelve"
+      "thirteen fourteen"
+      "thirteen fourteen"
+      "thirteen fourteen"
+      "fiveteen fourteen"
+      "fiveteen sixteen"
+      "fiveteen sixteen"
+      "fiveteen sixteen"
+      "seventeen sixteen"
+      "seventeen eighteen"
+      "seventeen eighteen"
+      "seventeen eighteen"
+      "nineteen eighteen"
+      "nineteen twenty"
+      "nineteen twenty"
+      "nineteen twenty"
+      "twenty1 twenty"
+      "twenty1 twenty2"
+      "twenty1 twenty2"
+      "twenty1 twenty2"
+      "twenty3 twenty2"
+      "twenty3 twenty4"
+      "twenty3 twenty4"
+      "twenty3 twenty4"
+      "twenty5 twenty4"
+      "twenty5 twenty6"
+      "twenty5 twenty6"
+      "twenty5 twenty6"
+      ". twenty6";
+  }
+
+  .pic img {
+    width: 15rem !important;
+  }
+
+  .intro {
+    margin: 2em;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .container {
+    display: grid;
+    margin: 1em;
+    justify-items: center;
+    grid-template-columns: repeat(1, 1fr) !important;
+    gap: 1em 2em;
+    grid-template-areas:
+      "intro"
+      "one"
+      "two"
+      "three"
+      "four"
+      "five"
+      "six"
+      "seven"
+      "eight"
+      "nine"
+      "ten"
+      "eleven"
+      "twelve";
+  }
+  .c2018 {
+    display: grid;
+    margin: 1em;
+    justify-items: center;
+    grid-template-columns: repeat(1, 1fr) !important;
+    gap: 1em 2em;
+    grid-template-areas:
+      "intro"
+      "one"
+      "two" !important;
+  }
+
+  .c2020 {
+    display: grid;
+    margin: 1em;
+    justify-items: center;
+    grid-template-columns: repeat(1, 1fr) !important;
+    gap: 1em 2em;
+    grid-template-areas:
+      "intro"
+      "one"
+      "two"
+      "three"
+      "four"
+      "five"
+      "six"
+      "seven"
+      "eight"
+      "nine"
+      "ten"
+      "eleven"
+      "twelve"
+      "thirteen"
+      "fourteen"
+      "fiveteen"
+      "sixteen"
+      "seventeen"
+      "eighteen"
+      "nineteen"
+      "twenty"
+      "twenty1"
+      "twenty2"
+      "twenty3"
+      "twenty4"
+      "twenty5"
+      "twenty6";
+  }
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #00b8e6 #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 15px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #00b8e6;
+  border-radius: 50px;
+  border: 0px none #ffffff;
+}

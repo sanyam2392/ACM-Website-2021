@@ -11,51 +11,89 @@
   padding: 0;
 }
 
-
-#navbar {
-  top: 0;
-  width: 100%;
-  padding: 10px 0;
+nav {
+  height: 70px;
+  padding: 1rem;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  position: fixed;
+  align-items: center;
+  
 }
 
-.nav-brand {
-  font-size: 40px;
-  text-decoration: none;
-  padding-left: 20px;
+nav span {
+  margin: 0 2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 24px;
 }
 
-#navbar ul {
-  list-style-type: none;
-  overflow: hidden;
-  padding-right: 20px;
+.logo img,
+.logo {
+  height: 100%;
 }
 
-#navbar li {
-  display: inline-block;
-}
-
-.nav-item a {
-  text-decoration: none;
-  font-weight: bold;
-  color: #012732;
-  display: block;
-  text-align: center;
-  padding: 13px 20px;
-}
-
-.nav-item:hover a {
-  text-decoration: none;
+.active1 {
   color: #059fc9;
+  border-bottom: 2px solid #059fc9;
 }
 
-a {
-  line-height: 1.4;
-  padding: 0.25em;
+.underline {
+  position: relative;
 }
+
+.underline::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background-color: #012732;
+  transition: width 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .underline:hover::before {
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
+}
+
+
+
+.landingImg {
+  /* width: 170%;
+  position: absolute;
+  left: -32%;
+  top: -20%;
+  z-index: -1;
+  animation: blurEffect 3s ease forwards; */
+
+  width: 170%;
+  left: -32%;
+  top: -5%;
+  position: absolute;
+  z-index: -1;
+  animation: blurEffect 3s ease forwards;
+  height: 200px;
+}
+
+@keyframes blurEffect {
+  100% {
+    filter: blur(2px);
+    opacity: 0.4;
+  }
+}
+
+.landingImg img {
+  width: 100%;
+  height: 140vh;
+}
+
+
+
+
 
 
 
@@ -64,13 +102,12 @@ a {
   
   width: 100vw;
   height: 100vh;
- background-image:url(back.jpeg) ;
- overflow-x: hidden;
+  overflow-x: hidden;
  }
 
 .owl-carousel{
   position: relative;
-  top:25vh;
+  top:10vh;
   padding-top: 5px;
   width: 80%;
   left:10%;
@@ -132,8 +169,8 @@ margin: 4px 0px;
  
   color: black;
 	font-family: 'FontAwesome';
-	font-size: 40px;
-  font-weight: 20px;
+	font-size: 30px;
+  font-weight:5px;
 	line-height: 60px;
   
   position: relative; top: 37%;left:10%;
@@ -141,6 +178,12 @@ margin: 4px 0px;
   width: 60px; height: 60px;
   
 }
+.owl-item {
+   padding-top: 20px;
+   padding-bottom: 20px;
+   
+}
+
 .owl-item img{
   
   border-radius: 50%;
@@ -217,8 +260,8 @@ margin: 4px 0px;
 .line{
 
   position: absolute;
-  width: 12px;
-  height: 200px;
+  width: 10px;
+  height: 210px;
   left: 618px;
   top: 60vh;
   
